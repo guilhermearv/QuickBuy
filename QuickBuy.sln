@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Dominio", "QuickBuy.Dominio\QuickBuy.Dominio.csproj", "{9FD69283-C818-43BC-B989-E2F976A41476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Repositorio", "QuickBuy.Repositorio\QuickBuy.Repositorio.csproj", "{F46CD47A-C051-4587-B855-32C1E68A3530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Web", "QuickBuy.Web\QuickBuy.Web.csproj", "{29384039-F578-49FD-BB72-7B47B35BAFF2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD69283-C818-43BC-B989-E2F976A41476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD69283-C818-43BC-B989-E2F976A41476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD69283-C818-43BC-B989-E2F976A41476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD69283-C818-43BC-B989-E2F976A41476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46CD47A-C051-4587-B855-32C1E68A3530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46CD47A-C051-4587-B855-32C1E68A3530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46CD47A-C051-4587-B855-32C1E68A3530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46CD47A-C051-4587-B855-32C1E68A3530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29384039-F578-49FD-BB72-7B47B35BAFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29384039-F578-49FD-BB72-7B47B35BAFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29384039-F578-49FD-BB72-7B47B35BAFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29384039-F578-49FD-BB72-7B47B35BAFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
