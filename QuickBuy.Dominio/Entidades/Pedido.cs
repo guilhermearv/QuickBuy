@@ -1,10 +1,11 @@
 ﻿using QuickBuy.Dominio.Entidades.ObjetoDeValor;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Pedido
+    public class Pedido: Entidade
     {
         public int Id { get; set; }
         public DateTime DataPedido { get; set; }
@@ -19,5 +20,12 @@ namespace QuickBuy.Dominio.Entidades
         public FormaPagamento FormaPagamento { get; set; }
 
         public ICollection<ItemPedido> ItensPedido { get; set; }
+
+        public override void Validate()
+        {
+            LimparMensagensValidacao();
+            if (!ItensPedido.Any())
+                MensagemValidacao.Add("Pedido não pode ficar sem item de pedido");
+        }
     }
 }
